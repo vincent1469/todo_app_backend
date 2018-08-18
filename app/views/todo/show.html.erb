@@ -1,9 +1,13 @@
-<h1>Make The Curriculum</h1>
+<h1><%=@todo_name%></h1>
         <ul style="list-style-type:none">
             <li>Description:</li>
-            <li class="indentation">Create the curriculum for today's class.</li>
+            <li class="indentation">
+                <%=@todo_description%>
+            </li>
             <li>Pomodoro Estimate:</li>
-            <li class="indentation">4 Pomodoros</li>
+            <li class="indentation">
+                <%=@pomodoro_estimate%> Pomodoros
+            </li>
         <a href="/todos">Go Back</a>
         <a href="">Edit</a>
         <a href="">Delete</a>
