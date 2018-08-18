@@ -1,5 +1,9 @@
-<h1><%=@todo_name%></h1>
+<h1>Todo #<%=params[:id]%></h1>
         <ul style="list-style-type:none">
+            <li>Name:</li>
+            <li>
+                <%=@todo_name%>
+            </li>
             <li>Description:</li>
             <li class="indentation">
                 <%=@todo_description%>
