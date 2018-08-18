@@ -1,14 +1,14 @@
 <h1>Todo #<%=params[:id]%></h1>
         <ul style="list-style-type:none">
-            <li>Name:</li>
+            <li><b>Name:</b></li>
             <li>
                 <%=@todo_name%>
             </li>
-            <li>Description:</li>
+            <li><b>Description:</b></li>
             <li class="indentation">
                 <%=@todo_description%>
             </li>
-            <li>Pomodoro Estimate:</li>
+            <li><b>Pomodoro Estimate:</b></li>
             <li class="indentation">
                 <%=@pomodoro_estimate%> Pomodoros
             </li>
