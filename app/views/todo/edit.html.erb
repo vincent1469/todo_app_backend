@@ -11,7 +11,7 @@
             <%=@t.pomodoro_estimate%> Pomodoro(s)
         </li>
 <p></p>
-<form>
+<form action="/todo/update/<%=@t.id%>">
     <ul>
         <li class="form">New Name:</li>
         <li><input type="text" name="name"></li>
@@ -19,9 +19,10 @@
         <li><input type="text" name="description"  value="<%=@t.description%>"></li>
         <li class="form">New Pomodoro Estimate:</li>
         <li><input type="number" name="pomodoro_estimate" value="<%=@t.pomodoro_estimate%>"></li>
-        <li><input id="add-new-todo-button" type="submit" value="Edit To-Do"></li>
+        <li><input class="button" type="submit" value="Edit To-Do"></li>
     </ul>
 </form>
 <p></p>
 <a href="/todo/show/<%=@t.id%>" class="box">Go Back</a>
 <p></p>
+<div class="top-right">Vincent</div>

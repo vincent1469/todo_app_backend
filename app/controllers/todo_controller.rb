@@ -22,4 +22,12 @@ class TodoController <ApplicationController
     def edit
         @t=Todo.find(params[:id])
     end    
+    def update
+        t=Todo.find(params[:id])
+        t.description=params[:description]
+        t.pomodoro_estimate=params[:pomodoro_estimate]
+        t.completed=false
+        t.save
+        redirect_to"/todo/show/#{t.id}"
+    end    
 end
