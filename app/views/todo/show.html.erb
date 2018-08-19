@@ -1,4 +1,4 @@
-<h1>Todo #<%=params[:id]%></h1>
+<h1>Todo #<%=@t.id%></h1>
         <ul style="list-style-type:none">
             <li><b>Name:</b></li>
             <li>
@@ -6,11 +6,11 @@
             </li>
             <li><b>Description:</b></li>
             <li class="indentation">
-                <%=@todo_description%>
+                <%=@t.description%>
             </li>
             <li><b>Pomodoro Estimate:</b></li>
             <li class="indentation">
-                <%=@pomodoro_estimate%> Pomodoros
+                <%=@t.pomodoro_estimate%> Pomodoros
             </li>
         <a href="/todos">Go Back</a>
         <a href="">Edit</a>
