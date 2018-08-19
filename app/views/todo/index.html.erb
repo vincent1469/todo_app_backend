@@ -6,46 +6,16 @@
                 <th>Pomodoro Estimate</th>
                 <th>Description</th>
               </tr>
+              <% @todos.each do |todo|%>
               <tr>
                 <td><input type="checkbox"></td>
-                <td><a href="/todo/show/1">The Wii Fit Plus</a></td> 
-                <td><span class="pomodoro-estimate">14 Pomodoros</span></td>
+                <td><a href="/todo/show/6">Tutorial</a></td> 
+                <td><span class="pomodoro-estimate"><%=todo.pomodoro_estimate%> Pomodoro(s)</span></td>
                 <td>
-                  Wii Fit Plus combines fun and fitness into one product. It can change how you exercise, how you balance, and even how you move. Expanding upon the original Wii Fit software, Wii Fit Plus is packed with every feature from Wii Fit—plus new exercises and tools to personalize your exercise routine. If you already have a profile on the original Wii Fit, you can easily transfer it over to Wii Fit Plus.
+                  <%=todo.description%>
                 </td>
               </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="/todo/show/2">Critical Alert</a></td> 
-                <td><span class="pomodoro-estimate">404 Pomodoros</span></td>
-                <td>
-                  Critical alert from microsoft, your computer has alerted us that it is infected with a virus and spyware this virus is sending your credit card details, facebook login and personal emails to hackers remotely please call us immediatly at the toll-free number listed so that our support engineers can walk you through the removal process over the phone if you close this page before calling us we will be forced to disable your computer to prevent further damage to our network. Error number 2-6-8-D-3
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="/todo/show/3">Gru</a></td> 
-                <td><span class="pomodoro-estimate">3 Pomodoros</span></td>
-                <td>
-                  Gru is the most powerful being in the universe, and here’s why: according to the height of a Minion (which is 3.5 feet on average) Gru is 4 minions tall, which means he is a godly size of 14 feet tall. Second if any of you remember the original Despicable Me, you Know there is a scene when Vector kidnaps the three girls and shoots a series of heat-seeking misses at Gru, he then dodge them all. According to the speed of an average ballistic missile (1900 mph) and the size of the missile according to his ankle size, Gru can perceive and move at such a speed that the missiles only move 9.5 miles per hour, 0.5% of their original speed. Plus after this Gru punches a shark and it is paralyzed meaning its spine is probably shattered, to remind you it would require a force greater than 3,000 newtons to fracture the spine. That’s equal to the impact created by a 500-pound car crashing into a wall at 30 miles per hour. I rest my case.
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="/todo/show/4">Copypasta</a></td> 
-                <td><span class="pomodoro-estimate">69 Pomodoros</span></td>
-                <td>
-                  Copypasta?! What gall you have! Do you dare suggest that the writings of which I have just now published for your bohemian eyes to witness are unoriginal? Do you believe I have posted such things for no better reason than the trivial amusement of sharing a "meme?" I doubt you even understand the complex sociological implications of meme theory, nor know if its creator. I would tell you but I wish to test your value to society one more time to see if you even have the mental capacity to use a modern search engine or, better yet, check out a book from your local library on the topic. Individuals like you who argue and mock on the internet have nothing better to do than get cheap thrills from sharing these "memes" without even understanding the rigorous study and theorization that went into the creation of such a theory. You trivialize and defame its significance with your egregious images of minions and poppycock photos of dogs wearing hats with gargantuan letters adorning the border. If I were a lesser man like you and your ilk I would spit at your feet for such an insult.
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="/todo/show/5">Kanye West</a></td> 
-                <td><span class="pomodoro-estimate">370 Pomodoros</span></td>
-                <td>
-                  After a long day of work, Kanye West goes to his Kanye Nest to take his Kanye Rest. He wakes up feeling his Kanye Best. Then he’ll get Kanye Dressed on his Kanye Vest to go on a Kanye Quest. He goes to church and becomes Kanye Blessed, then to a hotel room to be a Kanye Guest. Then to school to take his Kanye Test. He forgot to brush his teeth. Did he run out of Kanye Crest? His neighbor stole it, what a Kanye Pest.
-                </td>
-              </tr>
+              <%end%>
             </table>
     <div id="top-right">Vincent</div>
     <p>(A Pomodoro is 30 minutes long.)</p>
