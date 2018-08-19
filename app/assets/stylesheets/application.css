@@ -49,14 +49,17 @@ body {
 }
 a {
     color: #bec7c7;
+    padding: 10px;
+    text-align:center;
 }
 li {
     color: #d6c372;
-    padding: 5px;
+    padding: 10px;
 }
 h1 {
-    color: #d6c372;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 55px;
 }
 #add-todo {
     color: white;
@@ -67,4 +70,19 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
+}
+.form {
+    color: #bec7c7;
+}
+.box {
+    border: 2px solid white;
+    padding: 7.5px;
+}
+#add-new-todo-link {
+    font-weight: bold;
+    color: #d6c372;
+    background-color: black;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
 }
