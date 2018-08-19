@@ -16,8 +16,9 @@ class TodoController <ApplicationController
         redirect_to"/todo/show/#{t.id}"
     end    
     def delete
-        @todo_delete=Todo.destroy
-        t.save
+        todo_delete=Todo.find(params[:id])
+        todo_delete=Todo.destroy(params[:id])
+        todo_delete.save
         redirect_to"/todo/index"
     end    
 end

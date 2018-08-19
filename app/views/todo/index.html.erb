@@ -9,7 +9,7 @@
               <% @todos.each do |todo|%>
               <tr>
                 <td><input type="checkbox"></td>
-                <td><a href="/todo/show/6">Tutorial</a></td> 
+                <td><a href="/todo/show/<%=todo.id%>">Tutorial</a></td> 
                 <td><span class="pomodoro-estimate"><%=todo.pomodoro_estimate%> Pomodoro(s)</span></td>
                 <td>
                   <%=todo.description%>
