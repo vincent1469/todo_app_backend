@@ -86,3 +86,6 @@ h1 {
     border: 2px solid white;
     padding: 10px;
 }
+.indentation {
+    margin-left: 15px;
+}
